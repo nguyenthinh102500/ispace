@@ -43,8 +43,11 @@ export default function Carousel() {
         </div>
       </div>
       <div
-        className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-6 max-w-full md:max-w-screen-md mx-auto"
-        
+        className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-6"
+        style={{
+          width: `${window.innerWidth > 1024 ? "80%":"100%"}`, 
+          margin: "0 auto",
+        }}
       >
         <div className="p-8 rounded-lg md:col-span-4/6 md:border md:border-gray-300">
           <h1 className="text-3xl font-bold pb-4" style={{ color: "#f57e25" }}>

@@ -105,18 +105,13 @@ const Header = ({toggleDarkMode}) => {
           </div>
           <NavLink to="/dang-ky-ngay" className={` hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium`}>Đăng ký ngay</NavLink>
           <div className=" mt-4 ml-4">
-      <button
-        onClick={toggleDarkMode}
-        className={`rounded-full p-2 focus:outline-none ${isDarkMode ? 'bg-gray-700' : 'bg-gray-300'}`}
-      >
-        <span className={`block w-6 h-6 rounded-full ${isDarkMode ? 'bg-yellow-400' : 'bg-white'}`}></span>
-      </button>
+
     </div>
         </div>
       </div>
     )}
     {/* Toggle Dark Mode/Light Mode Button */}
-    <div className="absolute top-4 right-4 hidden sm:flex items-center">
+    <div className="fixed top-20 right-2  items-center">
   <button
     onClick={toggleDarkMode}
     className={`rounded-full p-2 focus:outline-none ${isDarkMode ? 'bg-gray-700' : 'bg-gray-300'}`}
